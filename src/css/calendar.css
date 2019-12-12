@@ -1,0 +1,58 @@
+.calendar-body {
+	display: grid;
+	position: relative;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: 120px;
+}
+
+.calendar-header {
+	display: grid;
+	position: relative;
+	grid-template-columns: repeat(7, 1fr);
+	grid-auto-rows: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: grey;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar-header-cell {
+	border: 1px solid white;
+}
+
+.calendar-header-cell:first-child {
+	background-color: rgb(221, 28, 86);
+}
+
+.calendar-cell {
+	border: 1px solid rgb(236, 236, 236);
+	transition-duration: 0.3s;
+	background-color: white;
+	cursor: pointer;
+}
+
+.not-current-month {
+	background-color: rgb(240, 240, 240);
+	color: rgb(190, 190, 190);
+}
+
+.sunday {
+	color: rgb(221, 28, 86);
+}
+
+.date-header {
+	text-align: right;
+	padding-right: 4px;
+	font-weight: 600;
+}
+
+.calendar-cell:hover {
+	z-index: 100;
+	box-shadow: 0 0 20px rgb(189, 189, 189);
+}
+
+.not-current-month:hover {
+	color: black;
+}
